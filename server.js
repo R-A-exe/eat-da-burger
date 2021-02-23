@@ -10,6 +10,6 @@ app.use(express.static('public'));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-app.use('/api', require('./model/burger'));
+app.use(require('./model/burger'));
 
 app.listen(PORT, console.log(`Listening to port ${PORT}`));
