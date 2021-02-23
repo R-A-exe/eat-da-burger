@@ -12,7 +12,7 @@ var orm = {
 
     insertOne: function (name) {
         return new Promise(function (resolve, reject) {
-            connection.query('INSERT INTO burgers VALUES(default, ? , false', name, (err) => {
+            connection.query('INSERT INTO burgers VALUES(default, ? , false)', name, (err) => {
                 if (err) return (reject(err));
                 return (resolve(true));
             });
