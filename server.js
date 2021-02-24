@@ -13,6 +13,6 @@ app.use(express.json());
 app.engine('handlebars', exphbs({defaultLayout:'main'}));
 app.set('view engine', 'handlebars');
 
-app.use('/*',require('./controllers/burgers_controller'));
+app.use(require('./controllers/burgers_controller'));
 
 app.listen(PORT, console.log(`Listening to port ${PORT}`));
