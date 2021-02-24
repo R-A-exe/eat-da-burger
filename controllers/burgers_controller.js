@@ -12,22 +12,20 @@ router.get('/', async (req, res)=>{
     }
 });
 
-router.post('/', async(req, res)=>{
+router.post('/api/burger', async(req, res)=>{
     try{
         await burger.create(req.body.name);
-        var data = await burger.all();
-        res.render('index', {burger: data});
+        res.send('Success');
     }catch(err){
         res.status(500);
         res.send(err);
     }
 });
 
-router.put('/burger/:id', async(req,res)=>{
+router.put('/api/burger/:id', async(req,res)=>{
     try{
         await burger.update(req.params.id);
-        var data = await burger.all();
-        res.render('index', {burger: data});
+        res.send('success')
     }catch(err){
         res.status(500);
         res.send(err);
