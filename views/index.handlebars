@@ -36,6 +36,7 @@
     $('#newBurger').click(e => {
         e.preventDefault;
         var name = $('#name').val();
+        if (name=="") return;
         $.post('api/burger/', { name: name }, res => {
             location.reload();
         });
