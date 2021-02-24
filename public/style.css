@@ -7,13 +7,17 @@ html, body{
     background-color: black;
 }
 
+
 h1{
     color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 30pt;
 }
 
 main{
     padding: 50px;
-    height: 80%;
+    height: 90%;
     background-image: url('/img/burger-hero.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -45,6 +49,10 @@ span{
     border-radius: 5px;
     background-color: rgb(250, 213, 1);
     height: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: larger;
+    color: rgb(95, 34, 19);
 }
 
 td div{
@@ -57,6 +65,7 @@ td button{
     border: none;
     color: white;
     border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .devoured{
@@ -65,11 +74,37 @@ td button{
     border-radius: 5px;
     background-color: rgb(96, 192, 66);
     height: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: larger;
+    color: rgb(61, 41, 11);
 }
 
+form{
+    margin: 10px;
+}
+
+input:active, input:focus{
+    outline: none !important;
+}
 
 input{
     width: 40%;
     height: 50px;
-    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: larger;
+}
+
+form button{
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: larger;
+    border-radius: 5px;
 }
