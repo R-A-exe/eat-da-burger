@@ -1,6 +1,7 @@
 var connection = require('./connection');
 
 var orm = {
+    //Get all
     selectAll: function () {
         return new Promise(function (resolve, reject) {
             connection.query('SELECT * FROM burgers', (err, data) => {
@@ -9,7 +10,7 @@ var orm = {
             });
         });
     },
-
+    //Create one
     insertOne: function (name) {
         return new Promise(function (resolve, reject) {
             connection.query('INSERT INTO burgers VALUES(default, ? , false)', name, (err) => {
@@ -18,7 +19,7 @@ var orm = {
             });
         });
     },
-
+    //Update one
     updateOne: function (id) {
         return new Promise(function (resolve, reject) {
             connection.query('UPDATE burgers SET devoured = true WHERE id = ?', id, (err) => {

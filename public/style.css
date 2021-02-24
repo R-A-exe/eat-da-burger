@@ -1,3 +1,5 @@
+/* Basic layout */
+
 html, body{
     width: 100%;
     height: 100%;
@@ -6,6 +8,8 @@ html, body{
     text-align: center;
 }
 
+
+/* Background image */
 body{
     background-image: url('/img/burger-hero.png');
     background-position: center;
@@ -13,6 +17,8 @@ body{
     background-size: cover;
 }
 
+
+/* Title */
 h1{
     color: white;
     font-family: 'Oswald', sans-serif;
@@ -20,12 +26,16 @@ h1{
     font-size: 30pt;
 }
 
+
+/* Main area */
 main{
     height: 92.5%;
     background-color: rgba(0,0,0,0.4);
     padding: 30px;
 }
 
+
+/* Tables */
 table{
     display: inline-block;
     width: 49%;
@@ -44,6 +54,7 @@ td{
     justify-content: space-between;
 }
 
+/* Undevoured burgers */
 span{
     flex: 1;
     padding: 5px;
@@ -61,6 +72,8 @@ td div{
     margin: auto;
 }
 
+/* Devour button */
+
 td button{
     height: 40px;
     background-color: rgba(247, 58, 0, 0.986);
@@ -70,6 +83,7 @@ td button{
     font-family: 'Oswald', sans-serif;
 }
 
+/* Devoured burgers */
 .devoured{
     padding: 5px;
     margin: 5px;
@@ -81,6 +95,9 @@ td button{
     font-size: larger;
     color: rgb(61, 41, 11);
 }
+
+
+/* Form */
 
 form{
     margin: 10px;
