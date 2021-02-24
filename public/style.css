@@ -4,9 +4,14 @@ html, body{
     margin: 0px;
     padding: 0px;
     text-align: center;
-    background-color: black;
 }
 
+body{
+    background-image: url('/img/burger-hero.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 h1{
     color: white;
@@ -18,15 +23,12 @@ h1{
 main{
     padding: 50px;
     height: 90%;
-    background-image: url('/img/burger-hero.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgba(0,0,0,0.4);
 }
 
 table{
     display: inline-block;
-    width: 50%;
+    width: 49%;
     padding: 10px;
     vertical-align:top
 }
@@ -47,7 +49,7 @@ span{
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
-    background-color: rgb(250, 213, 1);
+    background-color: rgb(250, 171, 1);
     height: 30px;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
