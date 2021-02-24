@@ -4,7 +4,7 @@ https://gentle-spire-36270.herokuapp.com
 
 ## Description
 
-A simply website that allows users to add a burger type and switch it to the "devoured" side. The website uses the technologies below.
+A simple website that allows users to add a burger type and switch it to the "devoured" side. The website uses the technologies below.
 
 ### Tech
 
@@ -12,7 +12,7 @@ A simply website that allows users to add a burger type and switch it to the "de
 - Handlebars;
 - MySQL database;
 - Heroku deployment;
-- JawsDB MySQL deployment;
+- JawsDB MySQL deployment.
 
 ![Website](./website.png)
 
