@@ -8,6 +8,10 @@ html, body{
     text-align: center;
 }
 
+html{
+    background-color: black;
+}
+
 
 /* Background image */
 body{
@@ -29,7 +33,7 @@ h1{
 
 /* Main area */
 main{
-    height: 92.5%;
+    height: 93.5%;
     background-color: rgba(0,0,0,0.4);
     padding: 30px;
 }
