@@ -38,18 +38,19 @@
 <script>
     //Handle submit
     $('#newBurger').click(e => {
-        e.preventDefault;
+        e.preventDefault();
         var name = $('#name').val();
         if (name=="") return;
         $.post('/api/burger/', { name: name }, res => {
             location.reload();
+            $('#name').val('');
         });
     })
 
     //Handle devour
     $(document).ready(function () {
         $(".devour").click(function (event) {
-            event.preventDefault;
+            event.preventDefault();
             var id = $(event.target).data('id');
             $.ajax({
                 url: `/api/burger/${id}`, type: 'PUT', success: function () {
