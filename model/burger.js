@@ -11,7 +11,7 @@ var burger = {
     },
     //Update devoured burger
     update: async function(id){
-        return await orm.updateOne(id);
+        return orm.updateOne(id);
     }
 
 }
