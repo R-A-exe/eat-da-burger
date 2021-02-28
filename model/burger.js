@@ -10,7 +10,7 @@ var burger = {
         return orm.insertOne(name);
     },
     //Update devoured burger
-    update: async function(id){
+    update: function(id){
         return orm.updateOne(id);
     }
 
